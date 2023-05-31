@@ -116,7 +116,7 @@ public class CheckOutController {
 				
 				//gui mail cho nguoi dat
 				mailer.send(
-						"ngthn2001@gmail.com", 
+						"hoangxuanhieu0301@gmail.com",
 						"Thông báo đặt hàng Thành Công từ ASS_SOF3021", 
 						"<h3>Chúc mừng bạn đã đặt hàng thành công từ ABC Shop ASS_SOF3021</h3> <br>"
 						+ "Xem chi tiết Order: "

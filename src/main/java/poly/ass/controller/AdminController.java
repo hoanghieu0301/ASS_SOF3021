@@ -16,11 +16,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
 import poly.ass.dao.CategoryDAO;
 import poly.ass.dao.OrderDAO;
 import poly.ass.dao.OrderDetailDAO;
-import poly.ass.entity.Category;
 import poly.ass.entity.Order;
 import poly.ass.entity.OrderDetail;
 @Controller
