@@ -1,15 +1,10 @@
 package poly.ass.controller;
 
-import java.io.File;
 import java.util.List;
 
-import javax.mail.MessagingException;
-import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -18,17 +13,13 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
-import poly.ass.dao.CategoryDAO;
-import poly.ass.dao.OrderDAO;
-import poly.ass.dao.OrderDetailDAO;
-import poly.ass.dao.ProductDAO;
-import poly.ass.entity.Account;
+import poly.ass.repo.CategoryRepo;
+import poly.ass.repo.OrderRepo;
+import poly.ass.repo.OrderDetailRepo;
+import poly.ass.repo.ProductDAO;
 import poly.ass.entity.CartItem;
 import poly.ass.entity.Category;
-import poly.ass.entity.MailModel;
 import poly.ass.entity.Order;
 import poly.ass.entity.OrderDetail;
 import poly.ass.entity.Product;
@@ -42,13 +33,13 @@ public class CheckOutController {
 	HttpServletRequest request;
 	
 	@Autowired
-	OrderDAO daoOrder;
+	OrderRepo daoOrder;
 	
 	@Autowired
-	OrderDetailDAO daoOrderDetail;
+	OrderDetailRepo daoOrderDetail;
 	
 	@Autowired
-	CategoryDAO daoCategory;
+	CategoryRepo daoCategory;
 	
 	@Autowired
 	ProductDAO daoProduct;

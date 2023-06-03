@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import poly.ass.dao.CategoryDAO;
-import poly.ass.dao.OrderDAO;
-import poly.ass.dao.OrderDetailDAO;
+import poly.ass.repo.CategoryRepo;
+import poly.ass.repo.OrderRepo;
+import poly.ass.repo.OrderDetailRepo;
 import poly.ass.entity.Order;
 import poly.ass.entity.OrderDetail;
 @Controller
@@ -26,13 +26,13 @@ import poly.ass.entity.OrderDetail;
 public class AdminController {
 	
 	@Autowired
-	OrderDAO daoOrder;
+	OrderRepo daoOrder;
 	
 	@Autowired
-	OrderDetailDAO daoOrderDetail;
+	OrderDetailRepo daoOrderDetail;
 	
 	@Autowired
-	CategoryDAO daoCategory;
+	CategoryRepo daoCategory;
 
 	@GetMapping("")
 	public String index(Model model) {

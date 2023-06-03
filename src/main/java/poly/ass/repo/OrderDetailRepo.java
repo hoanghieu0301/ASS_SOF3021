@@ -1,15 +1,14 @@
-package poly.ass.dao;
+package poly.ass.repo;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import poly.ass.entity.Order;
 import poly.ass.entity.OrderDetail;
 import poly.ass.entity.Report;
 
-public interface OrderDetailDAO extends JpaRepository<OrderDetail, Integer>{
+public interface OrderDetailRepo extends JpaRepository<OrderDetail, Integer>{
 
 	@Query("SELECT od \r\n"
 			+ "FROM OrderDetail od \r\n"

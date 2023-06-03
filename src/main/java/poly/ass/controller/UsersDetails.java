@@ -5,8 +5,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -24,16 +22,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import poly.ass.dao.AccountDAO;
+import poly.ass.repo.AccountRepo;
 import poly.ass.entity.Account;
-import poly.ass.entity.Category;
 
 @Controller
 @RequestMapping("/admin")
 public class UsersDetails {
 
 	@Autowired
-	AccountDAO dao;
+    AccountRepo dao;
 	
 	@ModelAttribute("roles")
 	public Map<Boolean, String> getRole(){

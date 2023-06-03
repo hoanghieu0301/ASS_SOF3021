@@ -2,21 +2,15 @@ package poly.ass.service;
 
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.annotation.SessionScope;
 
-import poly.ass.dao.OrderDetailDAO;
-import poly.ass.dao.ProductDAO;
-import poly.ass.dao.ShoppingCartDAO;
+import poly.ass.repo.OrderDetailRepo;
+import poly.ass.repo.ProductDAO;
+import poly.ass.repo.ShoppingCartDAO;
 import poly.ass.entity.CartItem;
 
 @SessionScope
@@ -25,7 +19,7 @@ public class ShoppingCartService implements ShoppingCartDAO {
 	Map<Integer, CartItem> map = new HashMap<>();
 	
 	@Autowired
-	OrderDetailDAO dao;
+    OrderDetailRepo dao;
 	
 	@Autowired
 	ProductDAO daoP;

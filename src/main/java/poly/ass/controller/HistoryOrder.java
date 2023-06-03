@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import poly.ass.dao.AccountDAO;
-import poly.ass.dao.CategoryDAO;
-import poly.ass.dao.OrderDAO;
-import poly.ass.dao.OrderDetailDAO;
+import poly.ass.repo.AccountRepo;
+import poly.ass.repo.CategoryRepo;
+import poly.ass.repo.OrderRepo;
+import poly.ass.repo.OrderDetailRepo;
 import poly.ass.entity.Account;
 import poly.ass.entity.Category;
 import poly.ass.entity.Order;
@@ -29,16 +29,16 @@ import poly.ass.service.ShoppingCartService;
 public class HistoryOrder {
 	
 	@Autowired
-	AccountDAO daoAccount;
+	AccountRepo daoAccount;
 	
 	@Autowired
-	CategoryDAO daoCategory;
+	CategoryRepo daoCategory;
 	
 	@Autowired
-	OrderDAO daoOrder;
+	OrderRepo daoOrder;
 	
 	@Autowired
-	OrderDetailDAO daoOrderDetail;
+	OrderDetailRepo daoOrderDetail;
 	
 	@Autowired
 	ShoppingCartService cart;

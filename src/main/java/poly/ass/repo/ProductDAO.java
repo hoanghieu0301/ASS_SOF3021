@@ -1,4 +1,4 @@
-package poly.ass.dao;
+package poly.ass.repo;
 
 import java.util.List;
 

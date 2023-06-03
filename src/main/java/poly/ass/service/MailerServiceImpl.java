@@ -10,7 +10,7 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 
-import poly.ass.dao.MailerService;
+import poly.ass.repo.MailerService;
 import poly.ass.entity.MailModel;
 
 @Service

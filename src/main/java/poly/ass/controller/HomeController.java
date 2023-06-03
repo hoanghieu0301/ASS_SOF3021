@@ -2,24 +2,20 @@ package poly.ass.controller;
 
 import java.util.List;
 
-import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
-import poly.ass.dao.AccountDAO;
-import poly.ass.dao.CategoryDAO;
-import poly.ass.dao.ProductDAO;
+import poly.ass.repo.AccountRepo;
+import poly.ass.repo.CategoryRepo;
+import poly.ass.repo.ProductDAO;
 import poly.ass.entity.Category;
 import poly.ass.entity.Product;
-import poly.ass.service.MailerServiceImpl;
 import poly.ass.service.ShoppingCartService;
 
 @Controller
@@ -32,10 +28,10 @@ public class HomeController {
 	ProductDAO daoProduct;
 	
 	@Autowired
-	CategoryDAO daoCategory;
+	CategoryRepo daoCategory;
 	
 	@Autowired
-	AccountDAO daoAccount;
+	AccountRepo daoAccount;
 	
 	@Autowired
 	ShoppingCartService cart;

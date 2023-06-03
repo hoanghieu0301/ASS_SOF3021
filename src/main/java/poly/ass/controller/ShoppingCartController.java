@@ -2,8 +2,6 @@ package poly.ass.controller;
 
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import poly.ass.dao.CategoryDAO;
-import poly.ass.dao.ProductDAO;
+import poly.ass.repo.CategoryRepo;
+import poly.ass.repo.ProductDAO;
 import poly.ass.entity.CartItem;
 import poly.ass.entity.Category;
 import poly.ass.entity.Product;
@@ -24,7 +22,7 @@ import poly.ass.service.ShoppingCartService;
 public class ShoppingCartController {
 	
 	@Autowired
-	CategoryDAO daoCategory;
+    CategoryRepo daoCategory;
 	
 	@Autowired
 	ProductDAO daoProduct;

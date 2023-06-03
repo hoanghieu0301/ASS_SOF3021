@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import poly.ass.dao.AccountDAO;
-import poly.ass.dao.CategoryDAO;
+import poly.ass.repo.AccountRepo;
+import poly.ass.repo.CategoryRepo;
 import poly.ass.entity.Account;
 import poly.ass.entity.Category;
 import poly.ass.service.ShoppingCartService;
@@ -31,10 +31,10 @@ public class ProfileController {
 	ShoppingCartService cart;
 	
 	@Autowired
-	AccountDAO dao;
+    AccountRepo dao;
 
 	@Autowired
-	CategoryDAO daoCategory;
+	CategoryRepo daoCategory;
 	
 	@RequestMapping("/myAcc/myProfile/{id}")
 	public String  viewProfile(

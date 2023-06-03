@@ -1,16 +1,11 @@
 package poly.ass.controller;
 
-import java.io.File;
 import java.util.List;
 
-import javax.mail.MessagingException;
-import javax.mail.internet.MimeMessage;
 import javax.servlet.http.HttpSession;
-import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -20,9 +15,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import poly.ass.dao.AccountDAO;
+import poly.ass.repo.AccountRepo;
 import poly.ass.entity.Account;
-import poly.ass.entity.MailModel;
 import poly.ass.service.MailerServiceImpl;
 import poly.ass.service.SessionService;
 
@@ -33,7 +27,7 @@ public class LoginController {
 	SessionService session;
 	
 	@Autowired
-	AccountDAO dao;
+	AccountRepo dao;
 	
 	@Autowired
 	JavaMailSender sender;
@@ -105,7 +99,6 @@ public class LoginController {
 			}
 		}
 	}
-
 	@GetMapping("/SignUp")
 	public String getFormSignUp(
 			Model model,
