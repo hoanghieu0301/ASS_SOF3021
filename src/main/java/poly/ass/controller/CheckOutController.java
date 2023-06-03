@@ -101,11 +101,7 @@ public class CheckOutController {
 			return "redirect:/cart/checkout";
 		}else {
 			try {
-				//tao order moi
 				daoOrder.save(order);
-				
-				//luu du lieu order detail
-
 				for (CartItem item : cart.getItems()) {
 //					System.out.println("Save orderDtails: " + item);
 					Order o = daoOrder.getById(order.getId());
@@ -113,8 +109,8 @@ public class CheckOutController {
 
 					daoOrderDetail.save(new OrderDetail(item.getPrice(), item.getQuantity(), product, o));
 				}
-				
-				//gui mail cho nguoi dat
+
+				//gửi gmail cho người đặt
 				mailer.send(
 						"hoangxuanhieu0301@gmail.com",
 						"Thông báo đặt hàng Thành Công từ ASS_SOF3021", 
@@ -122,7 +118,8 @@ public class CheckOutController {
 						+ "Xem chi tiết Order: "
 						+ "<a href='http://localhost:6901/myAcc/historyOrder/"+ order.getAccount().getUsername() +"'>tại đây</a>" );
 				
-				//xoa tat ca san pham trong gio hang
+				//xóa tất cả sản phẩm trong giỏ hàng
+
 				cart.getItems().clear();
 				return "redirect:/";
 			} catch (Exception e) {

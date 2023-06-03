@@ -38,11 +38,6 @@ public class CategoryDetails {
 		model.addAttribute("TitlePage", "Categories Page");
 		model.addAttribute("views", "/views/admin/Categories.jsp");
 
-		
-//		Category category = new Category();
-//		model.addAttribute("cate", category);
-//		List<Category> items = dao.findAll();
-//		model.addAttribute("items", items);
 
 		Pageable pageable = PageRequest.of(p.orElse(0), 5);
 		Page<Category> page = dao.findAll(pageable);

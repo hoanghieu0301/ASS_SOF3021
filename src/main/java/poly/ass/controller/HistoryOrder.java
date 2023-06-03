@@ -57,9 +57,6 @@ public class HistoryOrder {
 		model.addAttribute("categories", categories);
 
 		Account account = daoAccount.findById(id).get();
-//			System.out.println(account);
-//		model.addAttribute("user", account);
-		
 		Sort sortStatus = Sort.by(Direction.ASC,"Status");
 		Pageable pageable = PageRequest.of(p.orElse(0), 10,sortStatus);
 		Page<Order> page = daoOrder.findByAccount(account, pageable);
@@ -76,10 +73,8 @@ public class HistoryOrder {
 		model.addAttribute("TitlePage", "History OrderDetails");
 		model.addAttribute("view", "/views/user/historyOrderDetails.jsp");
 		model.addAttribute("Count", cart.getCount());
-
 		List<Category> categories = daoCategory.findAll();
 		model.addAttribute("categories", categories);
-
 		List<OrderDetail> listOD = daoOrderDetail.findHistoryOrderDetails(id);
 		model.addAttribute("listOD", listOD);
 		
