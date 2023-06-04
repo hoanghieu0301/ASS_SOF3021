@@ -19,7 +19,6 @@ public class LogInterceptor implements HandlerInterceptor {
 			Object handler)
 			throws IOException {
 		Logger logger = LoggerFactory.getLogger(LogInterceptor.class);
-//		logger.info("Hello");
 		return true;
 	}
 }

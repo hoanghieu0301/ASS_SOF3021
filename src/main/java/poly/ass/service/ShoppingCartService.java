@@ -9,20 +9,20 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.context.annotation.SessionScope;
 
 import poly.ass.repo.OrderDetailRepo;
-import poly.ass.repo.ProductDAO;
-import poly.ass.repo.ShoppingCartDAO;
+import poly.ass.repo.ProductRepo;
+import poly.ass.repo.ShoppingCartRepo;
 import poly.ass.entity.CartItem;
 
 @SessionScope
 @Service
-public class ShoppingCartService implements ShoppingCartDAO {
+public class ShoppingCartService implements ShoppingCartRepo {
 	Map<Integer, CartItem> map = new HashMap<>();
 	
 	@Autowired
     OrderDetailRepo dao;
 	
 	@Autowired
-	ProductDAO daoP;
+    ProductRepo daoP;
 	
 	@Override
 	public Collection<CartItem> getItems() {

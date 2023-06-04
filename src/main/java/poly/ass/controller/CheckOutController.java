@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import poly.ass.repo.CategoryRepo;
 import poly.ass.repo.OrderRepo;
 import poly.ass.repo.OrderDetailRepo;
-import poly.ass.repo.ProductDAO;
+import poly.ass.repo.ProductRepo;
 import poly.ass.entity.CartItem;
 import poly.ass.entity.Category;
 import poly.ass.entity.Order;
@@ -42,7 +42,7 @@ public class CheckOutController {
 	CategoryRepo daoCategory;
 	
 	@Autowired
-	ProductDAO daoProduct;
+	ProductRepo daoProduct;
 
 	@Autowired
 	ShoppingCartService cart;

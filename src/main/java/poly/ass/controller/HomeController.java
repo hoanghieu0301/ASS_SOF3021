@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import poly.ass.repo.AccountRepo;
 import poly.ass.repo.CategoryRepo;
-import poly.ass.repo.ProductDAO;
+import poly.ass.repo.ProductRepo;
 import poly.ass.entity.Category;
 import poly.ass.entity.Product;
 import poly.ass.service.ShoppingCartService;
@@ -25,7 +25,7 @@ public class HomeController {
 	HttpServletRequest request;
 	
 	@Autowired
-	ProductDAO daoProduct;
+	ProductRepo daoProduct;
 	
 	@Autowired
 	CategoryRepo daoCategory;

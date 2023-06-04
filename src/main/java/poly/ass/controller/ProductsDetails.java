@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import poly.ass.repo.CategoryRepo;
-import poly.ass.repo.ProductDAO;
+import poly.ass.repo.ProductRepo;
 import poly.ass.entity.Category;
 import poly.ass.entity.Product;
 
@@ -32,7 +32,7 @@ import poly.ass.entity.Product;
 public class ProductsDetails {
 
 	@Autowired
-	ProductDAO daoProd;
+	ProductRepo daoProd;
 	
 	@Autowired
 	CategoryRepo daoCate;

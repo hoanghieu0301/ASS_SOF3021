@@ -5,7 +5,7 @@ import java.util.Collection;
 import poly.ass.entity.*;
 
 
-public interface ShoppingCartDAO {
+public interface ShoppingCartRepo {
 	
 	/**
 	 * Lấy tất cả các mặt hàng trong giỏ

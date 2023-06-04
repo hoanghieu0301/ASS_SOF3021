@@ -26,7 +26,6 @@ public class AuthenticateInterceptor implements HandlerInterceptor {
 			);
 			return false;
 		}
-		
 		return true;
 	}
 }

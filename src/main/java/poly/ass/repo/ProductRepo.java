@@ -9,7 +9,7 @@ import org.springframework.data.repository.query.Param;
 import poly.ass.entity.Category;
 import poly.ass.entity.Product;
 
-public interface ProductDAO extends JpaRepository<Product, Integer> {
+public interface ProductRepo extends JpaRepository<Product, Integer> {
 	
 	@Query("SELECT entity FROM Product entity WHERE id = :id ")
     public Product findByProdID(@Param("id") Integer id);
