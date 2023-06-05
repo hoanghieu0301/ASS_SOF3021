@@ -28,7 +28,7 @@
 						<div class="panel-heading">${ p.name }</div>
 						<div class="panel-body">
 							<a href="#"> <img
-								src="https://i.pinimg.com/originals/4b/b2/fc/4bb2fc3f7f78ec348a1ceaf38906d2f7.png"
+								src="https://babi.vn/images/companies/1/Up%20hinh%20san%20pham/22493/ao-thun-gia-dinh-in-hinh-tha-tim-danh-cho-ba%20(1).jpg?1528776311374"
 								class="img-responsive" style="width: 100%" alt="Image">
 							</a>
 						</div>

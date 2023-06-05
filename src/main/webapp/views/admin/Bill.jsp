@@ -51,8 +51,8 @@
 		<li><span class="badge"><b class="text-info">${page.number+1}</b>
 		</span></li>
 		<li><a
-			href="/admin/bill?p=${page.number == page.totalPages-1 ? page.totalPages-1 : page.number+1}"><span
-				class="glyphicon glyphicon-forward"></span></a></li>
+			href="/admin/bill?p=${page.number == page.totalPages-1 ? page.totalPages-1 : page.number+1}">
+			<span class="glyphicon glyphicon-forward"></span></a></li>
 		<li><a href="/admin/bill?p=${page.totalPages-1}"><span
 				class="glyphicon glyphicon-fast-forward"></span></a></li>
 	</ul>

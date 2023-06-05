@@ -14,7 +14,7 @@
 
 		<div class="item active">
 			<img
-				src="https://s3-ap-southeast-1.amazonaws.com/images.spiderum.com/sp-images/debc11f0653911ea9a2edd2e2afa0bc1.png"
+				src="https://dony.vn/wp-content/uploads/2022/03/chuong-trinh-khuyen-mai-cho-shop-quan-ao-2.jpg"
 				alt="Los Angeles" style="width: 100%; height: 20cm;">
 			<div class="carousel-caption">
 				<h3>Los Angeles</h3>
@@ -24,7 +24,7 @@
 
 		<div class="item">
 			<img
-				src="https://shop.mixigaming.com/wp-content/uploads/2019/06/logo-mixi-t%C3%A9t.png"
+				src="https://promacprinting.com/wp-content/uploads/2021/03/chuong-trinh-khuyen-mai-quan-ao.jpg"
 				alt="Chicago" style="width: 100%; height: 20cm;">
 			<div class="carousel-caption">
 				<h3>Chicago</h3>
@@ -33,7 +33,7 @@
 		</div>
 
 		<div class="item">
-			<img src="https://i.ytimg.com/vi/kMVJfyzDmtM/maxresdefault.jpg"
+			<img src="https://eshop.misa.vn/wp-content/uploads/2018/07/chuong-trinh-khuyen-mai-cho-shop-quan-ao.png"
 				alt="New York" style="width: 100%; height: 20cm;">
 			<div class="carousel-caption">
 				<h3>New York</h3>
