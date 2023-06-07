@@ -62,7 +62,6 @@ public class ProfileController {
 			@Validated @ModelAttribute("user") Account account, 
 			BindingResult result
 			) {
-		
 		if(result.hasErrors()) {
 			List<ObjectError> errors = result.getAllErrors();
 			
@@ -74,10 +73,10 @@ public class ProfileController {
 		} else {
 			System.out.println(account);
 			dao.save(account);
-
 			return "redirect:/myAcc/myProfile/" + account.getUsername();
-
 		}
 		
 	}
+
+
 }
