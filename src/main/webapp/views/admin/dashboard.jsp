@@ -5,7 +5,7 @@
 	<small>Dashboard Page</small>
 </h1>
 <hr>
-<!-- 
+<!--
 <div class="well">
 	<h4>Dashboard</h4>
 	<p>Some text..</p>
