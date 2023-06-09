@@ -51,7 +51,7 @@ footer {
 						style="width: 100%;">
 						<span class="glyphicon glyphicon-arrow-left"></span> Quay về Shop
 					</button></a>
-				<h2>Online Store</h2>
+				<h2>SHOP ALIBABA</h2>
 				<br>
 				<ul class="nav nav-pills nav-stacked text-lg">
 					<li><a href="/admin"><span
