@@ -43,7 +43,7 @@
 						<div class="form-group">
 							<label for="state" class="control-label">Địa chỉ giao
 								hàng *</label> <form:input type="text" class="form-control" id="state" path="address"
-								placeholder="Ví dụ: số 69, ngõ 8 Lê Quang Đạo, Nam Từ Liêm, Hà Nội" />
+								placeholder="Ví dụ: Trịnh Văn Bô, Bắc Từ Liêm, Hà Nội" />
 						</div>
 						<h3>Thông tin bổ sung</h3>
 						<div class="form-group">

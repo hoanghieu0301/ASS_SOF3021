@@ -17,8 +17,7 @@
 				src="https://dony.vn/wp-content/uploads/2022/03/chuong-trinh-khuyen-mai-cho-shop-quan-ao-2.jpg"
 				alt="Los Angeles" style="width: 100%; height: 20cm;">
 			<div class="carousel-caption">
-				<h3>Los Angeles</h3>
-				<p>LA is always so much fun!</p>
+				<h3>Khuyến mãi tưng bừng</h3>
 			</div>
 		</div>
 
@@ -27,8 +26,7 @@
 				src="https://promacprinting.com/wp-content/uploads/2021/03/chuong-trinh-khuyen-mai-quan-ao.jpg"
 				alt="Chicago" style="width: 100%; height: 20cm;">
 			<div class="carousel-caption">
-				<h3>Chicago</h3>
-				<p>Thank you, Chicago!</p>
+				<h3>Khuyến mãi tưng bừng</h3>
 			</div>
 		</div>
 
@@ -36,8 +34,7 @@
 			<img src="https://eshop.misa.vn/wp-content/uploads/2018/07/chuong-trinh-khuyen-mai-cho-shop-quan-ao.png"
 				alt="New York" style="width: 100%; height: 20cm;">
 			<div class="carousel-caption">
-				<h3>New York</h3>
-				<p>We love the Big Apple!</p>
+				<h3>Khuyến mãi tưng bừng</h3>
 			</div>
 		</div>
 
@@ -134,7 +131,7 @@
 					<div class="panel-heading">${ sp.name }</div>
 					<div class="panel-body">
 						<a href="#"> <img
-							src="https://cf.shopee.vn/file/ee8eb646591071f3c109fc79478a8db6"
+							src="https://babi.vn/images/companies/1/Up%20hinh%20san%20pham/22493/ao-thun-gia-dinh-in-hinh-tha-tim-danh-cho-ba%20(1).jpg?1528776311374"
 							class="img-responsive" style="width: 100%" alt="Image">
 						</a>
 					</div>

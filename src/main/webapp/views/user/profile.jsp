@@ -16,7 +16,6 @@
 								src="/image/1.jpeg"
 								class="img-circle img-responsive">
 						</div>
-
 						<div class=" col-md-9 col-lg-9 ">
 							<form:form class="form-horizontal" action="/myProfile"
 								modelAttribute="user">

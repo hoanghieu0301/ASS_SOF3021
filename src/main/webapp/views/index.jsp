@@ -31,6 +31,9 @@
 /* Remove the jumbotron's default bottom margin */
 .jumbotron {
 	margin-bottom: 0;
+	height: 50px;
+	background-color:#212121;
+	color: #ffffff;
 }
 
 /* Add a gray background color and some padding to the footer */
@@ -43,7 +46,7 @@ footer {
 <body>
 	<div class="jumbotron">
 		<div class="container text-center">
-			<h1>Online Store</h1>
+			<h1>SHOP ALIBABA</h1>
 		</div>
 	</div>
 
